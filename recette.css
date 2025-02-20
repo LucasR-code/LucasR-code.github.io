@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Ultimate Kingdom Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ultimate Kingdom Regular"),
+    url("UltimateKingdom.woff") format("woff");
+}
+body {
+  background-color: #f8f3e6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #f8f3e6;
+  font-family: "Ultimate Kingdom Regular";
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: #0b5b5b;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+#logonavbar {
+  height: 100px;
+}
+
+ul {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2%;
+  padding-left: 0%;
+}
+li {
+  margin: 0 5px;
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 131%;
+}
+#deroulantlistederecette {
+  margin-right: 50%;
+}
+#deroulantlistedesproduitsdesaison {
+  display: block;
+}
+nav h1 {
+  margin-right: -250px;
+  font-weight: bold;
+  font-size: 250%;
+}
+
+img {
+  height: 180px;
+  border-radius: 10%;
+}
+.etape {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #002c2c;
+  border-radius: 10px;
+  width: 70%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 14%;
+  height: 200px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: 0.6s;
+}
+#etapes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  width: 100%;
+  margin: 10px 0; /* 20px en haut en bas, 0px à droite et à gauche */
+}
+
+input[type="checkbox"] {
+  display: flex;
+  position: relative;
+  top: 140px;
+  left: 10%;
+  /* on "cache" la checkbox ; ou plutôt juste son style */
+}
+input[type="checkbox"]:checked + .etape {
+  background-color: #002c2c;
+  opacity: calc(60%);
+  transform: scale(0.95);
+}
+
+h2 {
+  color: #002c2c;
+  padding-top: 10%;
+  text-align: center;
+  font-size: 350%;
+}
+#h4etp {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5%;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: #0b5b5b;
+  margin-top: 100px;
+  height: 200px;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+footer a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cardetape:active {
+  background-color: #002c2c;
+}
+.cardetape:target {
+  background-color: #002c2c;
+}
+@media screen and (max-width: 480px) {
+  .recette {
+    flex-direction: row;
+  }
+  .recette:hover {
+    transform: scale(1);
+  }
+  img {
+    height: 250px;
+    border-radius: 10%;
+  }
+  nav {
+    padding: 0;
+  }
+  h2 {
+    padding-top: 20%;
+  }
+  h1 {
+    display: none;
+  }
+  ul {
+    margin-right: 10%;
+  }
+  li {
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: large;
+  }
+  #deroulantlistederecette {
+    font-size: 150%;
+    position: relative;
+    right: 20%;
+  }
+  #deroulantlistedesproduitsdesaison {
+    font-size: 150%;
+  }
+  .etape {
+    height: 300px;
+  }
+}

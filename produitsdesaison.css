@@ -1,0 +1,209 @@
+@font-face {
+  font-family: "Ultimate Kingdom Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Ultimate Kingdom Regular"),
+    url("UltimateKingdom.woff") format("woff");
+}
+body {
+  background-color: #f8f3e6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #f8f3e6;
+  font-family: "Ultimate Kingdom Regular";
+}
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  background-color: #0b5b5b;
+  width: 100%;
+  height: 100px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+#logonavbar {
+  height: 100px;
+}
+
+ul {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2%;
+  padding-left: 0%;
+}
+li {
+  margin: 0 5px;
+  font-weight: bold;
+  margin-left: 10%;
+  font-size: 131%;
+}
+#deroulantlistederecette {
+  margin-right: 50%;
+}
+#deroulantlistedesproduitsdesaison {
+  display: block;
+}
+nav h1 {
+  margin-right: -250px;
+  font-weight: bold;
+  font-size: 250%;
+}
+h2 {
+  color: #002c2c;
+  padding-top: 6%;
+  text-align: center;
+  font-size: 350%;
+}
+#ficheproduit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #002c2c;
+  border-radius: 10px;
+  width: 70%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 5%;
+  margin-left: 14%;
+  height: 300px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+  transition: 0.4s;
+  animation-name: divdroite;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: 1;
+}
+@keyframes divdroite {
+  0% {
+    margin-top: 20%;
+  }
+  100% {
+    margin-top: 5%;
+  }
+}
+#descriptionproduit {
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  margin: 3%;
+}
+#ideerecette {
+  font-size: 150%;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding-left: 6%;
+}
+#h4etp {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  height: 250px;
+  border-radius: 10%;
+}
+/*nav li:hover {
+  background-color: #002c2c90;
+  border: #002c2c71 5px solid;
+  border-radius: 12px;
+  transition-duration: 0.3s;
+}*/
+footer {
+  background-color: #0b5b5b;
+  height: 200px;
+  margin-top: 100px;
+  width: 100%;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 70px;
+}
+footer p {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer a {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 0;
+  }
+  h1 {
+    display: none;
+  }
+  ul {
+    margin-right: 12%;
+  }
+  li {
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: large;
+  }
+  #deroulantlistederecette {
+    font-size: 150%;
+    position: relative;
+    right: 20%;
+  }
+  #deroulantlistedesproduitsdesaison {
+    font-size: 150%;
+  }
+  footer {
+    background-color: #0b5b5b;
+    height: 200px;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.85);
+    margin-top: 50px;
+  }
+  #descriptionproduit {
+    font-size: 80%;
+  }
+  #ficheproduit {
+    flex-direction: column;
+    height: 700px;
+  }
+  #descriptionproduit {
+    width: 90%;
+    font-size: 110%;
+  }
+  #ideerecette {
+    display: flex;
+    flex-direction: column;
+    padding-left: 30%;
+    padding-top: 10%;
+    width: 400px;
+  }
+
+  #ideerecette p {
+    margin-bottom: 5%;
+  }
+  #ficheproduit img {
+    padding-top: 3%;
+  }
+}
